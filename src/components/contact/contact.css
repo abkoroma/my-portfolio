@@ -1,0 +1,39 @@
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-box label {
+    display: flex;
+    font-size: 20px;
+}
+
+.input-box .field {
+    width: 500px;
+    height: 30px;
+}
+
+.input-box .text-field {
+    width: 500px;
+    height: 150px;
+}
+
+.button {
+    width: 150px;
+    height: 30px;
+    background-color: rgb(71, 71, 192);
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    color: white;
+}

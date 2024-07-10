@@ -1,0 +1,37 @@
+.about-page {
+    display: flex;
+    justify-content: center;
+    gap: 65px;
+}
+
+/*.about {
+    
+}*/
+
+.about p {
+    max-width: 500px;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+/*.skills {
+    margin-right: 30px;
+}
+
+.skills h3 {
+
+}*/
+
+.skill-list {
+    display: grid;
+    grid-template-columns: 135px 135px 135px 135px;
+    grid-template-rows: 35px 35px 35px 35px;
+    gap: 15px;
+}
+
+.skill-list span {
+    background-color: rgb(241, 88, 88);
+    text-align: center;
+    align-content: center;
+    border-radius: 3px;
+}

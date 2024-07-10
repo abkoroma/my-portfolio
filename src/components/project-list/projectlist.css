@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.img-card {
+    width: 750px;
+    height: 500px;
+}
+
+.img-card .proj-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.props {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.stacks {
+    display: flex;
+}
+
+.stack {
+    background-color: rgb(189, 184, 184);
+    border-radius: 3px;
+    width: 90px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.git-link {
+    display: flex;
+    border: thin black 2px;
+}
+
+.link {
+    text-decoration: none;
+    background-color: rgb(126, 126, 212);
+    border-radius: 3px;
+    width: 90px;
+    color: black;
+}
+
+

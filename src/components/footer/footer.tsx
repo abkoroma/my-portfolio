@@ -2,7 +2,9 @@ export default function Footer() {
 
     return (
         <footer className="footer">
-            <p>&copy;2024 by Abu B Koroma</p>
+            <div className="footer-con">
+                <span>&copy;2024 Abu B Koroma</span>
+            </div>
         </footer>
     );
 

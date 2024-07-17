@@ -14,7 +14,7 @@ export const data = [
     {
         imageUrl: `${recipebook}`,
         title: "Recipe Book",
-        description: "Create a book of original recipes that you have collected from family a friends",
+        description: "Create a book of original recipes that you have collected from family a friends.",
         stack: ['Angular', 'Typescript', 'HTML/CSS', 'Firebase'],
         link: "https://github.com/abkoroma/recipe-book"
     },
@@ -28,7 +28,7 @@ export const data = [
     {
         imageUrl: `${forkify}`,
         title: "Forkify",
-        description: "Search for nice, created recipes and bookmark for later",
+        description: "Search for inspirational recipes and bookmark for later.",
         stack: ['Javascript', 'HTML/CSS'],
         link: "https://github.com/abkoroma/forkify-app"
     }

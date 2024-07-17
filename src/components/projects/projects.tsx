@@ -6,7 +6,7 @@ export default function Projects() {
 
     return (
         <div>
-            <h1>My Work</h1>
+            <h1 className="project-title">My Work</h1>
             <div className="main-container">
                 {
                     data.map(project => (

@@ -6,7 +6,7 @@ export default function ProjectList(props: {
     imageUrl: string, title: string, description: string, stack: string[], link: string}) {
 
     return (
-        <div className="container">
+        <div className='grid-container'>
             <div className="img-card">
                 <img className="proj-img" src={props.imageUrl} alt={props.title} />
             </div>
@@ -22,6 +22,9 @@ export default function ProjectList(props: {
                 </div>
                 <span className="git-link">
                     <Link className='link' to={props.link} target="_blank" rel="noreferrer">Github</Link>
+                </span>
+                <span className="view-link">
+                    <Link className='v-link' to={props.link} target="_blank" rel="noreferrer">View</Link>
                 </span>
             </div>
         </div>

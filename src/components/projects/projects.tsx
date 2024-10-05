@@ -11,6 +11,7 @@ export default function Projects() {
                 {
                     data.map(project => (
                         <ProjectList 
+                            key={project.title}
                             imageUrl={project.imageUrl}
                             title={project.title}
                             description={project.description}

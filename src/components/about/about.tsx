@@ -21,11 +21,11 @@ export default function AboutMe() {
                     </p>
                 </div>
                 <div className="skills">
-                    <h3>Languages and Technology</h3>
+                    <h2>Languages and Technology</h2>
                     <div className="skill-list">
                         {
                             skills.map(skill => (
-                                <Skills skills={skill} />
+                                <Skills skills={skill} key={skill} />
                             ))
                         }
                     </div>

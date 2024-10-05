@@ -16,15 +16,12 @@ export default function ProjectList(props: {
                 <div className='stacks'>
                     {
                         props.stack.map((stacks) => 
-                            <span className="stack">{stacks}</span>
+                            <span className="stack" key={stacks}>{stacks}</span>
                         )
                     }
                 </div>
                 <span className="git-link">
                     <Link className='link' to={props.link} target="_blank" rel="noreferrer">Github</Link>
-                </span>
-                <span className="view-link">
-                    <Link className='v-link' to={props.link} target="_blank" rel="noreferrer">View</Link>
                 </span>
             </div>
         </div>

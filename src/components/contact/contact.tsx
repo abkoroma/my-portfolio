@@ -30,7 +30,7 @@ export default function Contact() {
 
     return (
         <div className="contact">
-            <h1>CONTACT ME</h1>
+            <h1>GET IN TOUCH</h1>
             <form className="form" onSubmit={handleSubmit}>
                 <div className="input-box">
                     <label>Name</label>

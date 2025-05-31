@@ -5,7 +5,7 @@ import "./about.css";
 export default function AboutMe() {
 
     return (
-        <div>
+        <section>
             <h1>ABOUT ME</h1>
             <div className="about-page">
                 <div className="about">
@@ -31,6 +31,6 @@ export default function AboutMe() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

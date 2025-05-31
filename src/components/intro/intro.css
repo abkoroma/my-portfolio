@@ -1,24 +1,127 @@
 .intro {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    text-align: center;
     gap: 5rem;
     margin-top: 50px;
     margin-bottom: 110px;
+    padding: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    text-align: left;
+    max-width: 600px;
+}
+
+.intro-info h1{
+    font-size: 3rem;
+    margin: 0;
+}
+
+.intro-info p {
+    font-size: 1.2rem;
+    margin: 0;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+}
+
+.intro-info .span-container {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(3, 1fr); /* Create three equal columns */
+    gap: 1rem; /* Add spacing between columns */
+    width: 100%; /* Ensure the container spans the full width */
 }
 
 
-.intro .my_picture {
-    max-width: 350px;
-    align-items: stretch;
+.intro-info span {
+    display: inline-block;
+    padding: 0.8rem 1rem;
+    border: 2px solid white;
+    background-color: #343a40;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
+    cursor: pointer;
 }
 
-.intro p {
+.intro-info span a {
+    color: white;
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Make text bold */
+}
+
+.intro-info span:hover {
+    color: white;
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.intro-info span:hover a {
+    color: white; /* Ensure link color remains white on hover */
+}
+
+.my_picture {
+    flex: 1;
     max-width: 400px;
-    font-size: 20px;
-    line-height: 25px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-span {
-    margin-right: 15px;
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column; /* Stack the content vertically */
+        gap: 2rem;
+    }
+
+    .intro-info {
+        text-align: center; /* Center-align text for smaller screens */
+        align-items: center;
+    }
+
+    .intro-info h1 {
+        font-size: 2.5rem; /* Reduce font size */
+    }
+
+    .intro-info p {
+        font-size: 1rem; /* Reduce font size */
+    }
+
+    .intro-info .span-container {
+        grid-template-columns: 1fr; /* Stack spans vertically */
+    }
+
+    .my_picture {
+        max-width: 300px; /* Reduce image size */
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-info h1 {
+        font-size: 2rem; /* Further reduce font size */
+    }
+
+    .intro-info p {
+        font-size: 0.9rem; /* Further reduce font size */
+    }
+
+    .my_picture {
+        max-width: 200px; /* Further reduce image size */
+    }
+
+    .intro-info span {
+        padding: 0.6rem 0.8rem; /* Adjust padding for smaller buttons */
+        font-size: 0.9rem; /* Reduce font size for buttons */
+    }
 }

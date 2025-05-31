@@ -1,6 +1,9 @@
 .App {
   text-align: center;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the app takes full height */
 }
 
 .App-logo {
@@ -27,6 +30,25 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 0.75rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: #0056b3;
 }
 
 @keyframes App-logo-spin {

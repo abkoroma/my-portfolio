@@ -33,25 +33,57 @@
 
 .stacks {
     display: grid;
-    grid-template-columns: 100px 100px 100px;
+    grid-template-columns: repeat(3, 1fr); /* Responsive grid layout */
+    gap: 1rem; /* Space between stack items */
+    /*padding: 1.5rem; /* Padding inside the stack container */
+    /*background-color: #f8f9fa; /* Light gray background color */
+    /*border-radius: 10px; /* Rounded corners for the stack container */
+    /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
 }
 
 .stack {
-    background-color: #40434E;
-    font-weight: 70px;
-    height: 25px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    color: white;
-    align-self: center;
+    display: inline-block; /* Ensure stacks behave like inline-block elements */
+    background-color: #f8f9fa; /* Light gray background color */
+    padding: 0.5rem 1rem; /* Add padding inside each stack */
+    border: 1px solid #ddd; /* Light border around each stack */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    text-align: center; /* Center-align text inside the stack */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-size: 0.9rem; /* Adjust font size */
+    color: #343a40; /* Dark gray text color */
+    margin: 0.25rem 0.5rem 0 0; /* Add spacing between stacks */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stack:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
 }
 
 .git-link {
-    border: solid black 1.5px;
-    background-color: black;
-    width: 90px;
-    height: 25px;
-    margin-top: 15px;
+    display: inline-block;
+    background-color: #f8f9fa; /* Light gray background color */
+    padding: 0.5rem 1rem; /* Add padding inside the span */
+    border: 1px solid #ddd; /* Light border around the span */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    text-align: center; /* Center-align text inside the span */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-size: 0.9rem; /* Adjust font size */
+    color: #343a40; /* Dark gray text color */
+    margin: 1.2rem 0.5rem 0 0; /* Add spacing around the span */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
+    width: 4.8rem;
+}
+
+.git-link:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.git-link .link {
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Inherit the text color from the parent */
+    font-weight: bold; /* Make the text bold */
 }
 
 .link {
@@ -61,5 +93,72 @@
     vertical-align: middle;
 }
 
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-rows: auto; /* Adjust rows automatically */
+        row-gap: 20px; /* Reduce row gap */
+    }
+
+    .img-card {
+        width: 100%; /* Full width for smaller screens */
+        height: auto; /* Adjust height automatically */
+    }
+
+    .props {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .stacks {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+        gap: 0.5rem; /* Reduce gap between items */
+    }
+
+    .stack {
+        font-size: 0.8rem; /* Reduce font size */
+        padding: 0.4rem 0.8rem; /* Adjust padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .stacks {
+        grid-template-columns: 1fr; /* Single column on very small screens */
+    }
+
+    .stack {
+        font-size: 0.7rem; /* Further reduce font size */
+        padding: 0.3rem 0.6rem; /* Adjust padding */
+    }
+}
+
+@media (max-width: 768px) {
+    .git-link {
+        width: 100%; /* Full width for smaller screens */
+        margin: 0.5rem 0; /* Adjust margin */
+        font-size: 0.8rem; /* Reduce font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .git-link {
+        font-size: 0.7rem; /* Further reduce font size */
+        padding: 0.4rem 0.6rem; /* Adjust padding */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center;
+    }
+
+    .nav-list {
+        flex-direction: column; /* Stack links vertically */
+        gap: 0.5rem; /* Add spacing between links */
+    }
+}
 
 

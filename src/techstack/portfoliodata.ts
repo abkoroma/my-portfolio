@@ -5,6 +5,7 @@ import forkify from "../logo/forkify-app_.png";
 
 export const data = [
     {
+        id: 1,
         imageUrl: `${ecommorce}`,
         title: "Clothing Store",
         description: "Full stack ecomerce application.",
@@ -12,6 +13,7 @@ export const data = [
         link: "https://github.com/abkoroma/ecommerce-clothing-store",
     },
     {
+        id: 2,
         imageUrl: `${recipebook}`,
         title: "Recipe Book",
         description: "Create a book of original recipes that you have collected from family a friends.",
@@ -19,6 +21,7 @@ export const data = [
         link: "https://github.com/abkoroma/recipe-book"
     },
     {
+        id: 3,
         imageUrl: `${libraryapp}`,
         title: "Library Application",
         description: "Library book managment for both users and admins.",
@@ -26,6 +29,7 @@ export const data = [
         link: "https://github.com/abkoroma/library-app"
     },
     {
+        id: 4,
         imageUrl: `${forkify}`,
         title: "Forkify",
         description: "Search for inspirational recipes and bookmark for later.",

@@ -1,35 +1,124 @@
 .about-page {
     display: flex;
-    justify-content: center;
-    height: 100%;
-    gap: 65px;
-    margin-bottom: 50px;
+    /*flex-wrap: wrap;*/
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin-bottom: 0 auto;
 }
 
-.about-page h2 {
-    margin-bottom: 30px;
+.about {
+    flex: 1 1 45%;
+    text-align: left;
+}
+
+.skills {
+    flex: 1 1 45%;
+    text-align: left;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #343a40;
 }
 
 .about p {
-    max-width: 500px;
-    font-size: 17px;
-    line-height: 1.5;
-    text-align: left;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: 555;
+    margin-bottom: 1.5rem;
 }
 
 .skill-list {
     display: grid;
-    grid-template-columns: 135px 135px 135px 135px;
-    grid-template-rows: 35px 35px 35px 35px;
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    /*background-color: #f8f9fa;*/
+    /*border-radius: 10px;*/
+    /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-.skill-list span {
-    text-align: center;
-    align-content: center;
-    border: 1px solid rgb(156, 151, 151);
-    font-weight: 100px;
-    background-color: #6b6767;
-    color: rgb(235, 232, 232);
-    box-shadow: 0 3px 3px 3px;
+.skill-list .skill-item {
+    background-color: #ffffff; /* White background for individual skill items */
+    padding: 0.5rem 1rem; /* Padding inside each skill item */
+    border-radius: 5px; /* Rounded corners for skill items */
+    text-align: center; /* Center-align text */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for skill items */
+    font-size: 0.9rem; /* Adjust font size */
+    color: #343a40; /* Dark gray text color */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect */
 }
+
+.skill-list .skill-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.skill-list div {
+    background-color: #ffffff; /* Light gray background */
+    /*padding: 0.5rem 1rem;*/
+    /*border-radius: 5px;*/
+    text-align: center;
+    /*box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-size: 0.9rem;
+    color: #343a40; /* Dark gray */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-list div:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.about-page {
+    background-color: #f8f9fa; /* Light gray background */
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .about-page {
+        flex-direction: column; /* Stack the sections vertically */
+        align-items: center;
+        gap: 1.5rem; /* Reduce the gap between sections */
+    }
+
+    .about, .skills {
+        flex: 1 1 100%; /* Take up full width */
+        text-align: center; /* Center-align text for smaller screens */
+    }
+
+    .skill-list {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Adjust grid for smaller screens */
+        gap: 0.5rem; /* Reduce gap between skill items */
+    }
+}
+
+/* Responsive styles for very small screens */
+@media (max-width: 480px) {
+    .about-page {
+        padding: 1rem; /* Reduce padding for smaller screens */
+    }
+
+    .about p {
+        font-size: 0.9rem; /* Reduce font size for better readability */
+        line-height: 1.6; /* Adjust line height */
+    }
+
+    .skill-list {
+        grid-template-columns: 1fr; /* Single column layout for very small screens */
+    }
+}
+

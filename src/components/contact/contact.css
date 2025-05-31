@@ -1,37 +1,110 @@
+.contact {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    /*color: #007bff; */
+}
+
 .form {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /*justify-content: center;*/
+    /*align-items: center;*/
     flex-direction: column;
-    gap: 10px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 1.5rem;
 }
 
 .input-box {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-items: flex-start;
+    gap: 0.5rem;
 }
 
-.input-box label {
-    display: flex;
-    font-size: 20px;
-}
-
-.input-box .field {
+.field, .text-field {
     width: 500px;
-    height: 30px;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.input-box .text-field {
-    width: 500px;
-    height: 150px;
+.text-field {
+    min-height: 120px; /* Set a minimum height for the textarea */
+    resize: vertical; /* Allow vertical resizing */
 }
 
 .button {
-    border: 1px solid black;
+    width: 100%;
+    padding: 0.8rem 1.5rem;;
+    /*border: 1px solid black;*/
+    border-radius: 5px;
+    font-size: 1rem;
     background-color: black;
-    width: 150px;
-    height: 30px;
+    /*width: 150px;
+    height: 30px;*/
+    border: none;
     cursor: pointer;
     color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .contact {
+        padding: 1.5rem;
+    }
+
+    .contact h1 {
+        font-size: 2rem; /* Reduce font size for smaller screens */
+    }
+
+    .form {
+        gap: 1rem; /* Reduce spacing between form fields */
+    }
+
+    .field, .text-field {
+        font-size: 0.9rem; /* Reduce font size for smaller screens */
+        padding: 0.7rem;
+    }
+
+    .button {
+        font-size: 0.9rem; /* Adjust button font size */
+        padding: 0.7rem 1.2rem;
+    }
+}
+
+/* Responsive styles for very small screens */
+@media (max-width: 480px) {
+    .contact {
+        padding: 1rem;
+    }
+
+    .contact h1 {
+        font-size: 1.8rem; /* Further reduce font size */
+    }
+
+    .field, .text-field {
+        font-size: 0.8rem; /* Further reduce font size */
+        padding: 0.6rem;
+    }
+
+    .button {
+        font-size: 0.8rem; /* Adjust button font size */
+        padding: 0.6rem 1rem;
+    }
 }

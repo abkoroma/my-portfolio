@@ -1,12 +1,12 @@
 .about-page {
     display: flex;
     /*flex-wrap: wrap;*/
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     gap: 2rem;
     padding: 2rem;
     max-width: 1200px;
-    margin-bottom: 0 auto;
+    margin: 0 auto;
 }
 
 .about {

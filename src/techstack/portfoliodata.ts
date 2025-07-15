@@ -1,24 +1,24 @@
 import ecommorce from "../logo/ecommerce.png";
 import libraryapp from "../logo/library-app.png";
-import recipebook from "../logo/recipe-book.png";
-import forkify from "../logo/forkify-app_.png";
+import wildOasis from "../logo/the-wild-oasis.png";
+import portfolio from "../logo/portfolio-page.png";
 
 export const data = [
     {
         id: 1,
+        imageUrl: `${wildOasis}`,
+        title: "The Wild Oasis",
+        description: "Full stack hotel/cabin booking application.",
+        stack: ['React', 'JavaScript', 'Typescript', 'HTML/CSS', 'Supabase','Tanstack'],
+        link: "https://github.com/abkoroma/the-wild-oasis.git",
+    },
+    {
+        id: 2,
         imageUrl: `${ecommorce}`,
         title: "Clothing Store",
         description: "Full stack ecomerce application.",
         stack: ['React', 'JavaScript', 'Typescript', 'HTML/CSS', 'GraphQL','Stripe'],
         link: "https://github.com/abkoroma/ecommerce-clothing-store",
-    },
-    {
-        id: 2,
-        imageUrl: `${recipebook}`,
-        title: "Recipe Book",
-        description: "Create a book of original recipes that you have collected from family a friends.",
-        stack: ['Angular', 'Typescript', 'HTML/CSS', 'Firebase'],
-        link: "https://github.com/abkoroma/recipe-book"
     },
     {
         id: 3,
@@ -30,10 +30,10 @@ export const data = [
     },
     {
         id: 4,
-        imageUrl: `${forkify}`,
-        title: "Forkify",
-        description: "Search for inspirational recipes and bookmark for later.",
-        stack: ['Javascript', 'HTML/CSS'],
-        link: "https://github.com/abkoroma/forkify-app"
-    }
+        imageUrl: `${portfolio}`,
+        title: "My Porfolio",
+        description: "My personal portfolio website.",
+        stack: ['React', 'TypeScript', 'Javascript', 'HTML/CSS'],
+        link: "https://github.com/abkoroma/my-portfolio.git"
+    },
 ];

@@ -31,7 +31,7 @@ export const data = [
     {
         id: 4,
         imageUrl: `${portfolio}`,
-        title: "My Porfolio",
+        title: "My Portfolio",
         description: "My personal portfolio website.",
         stack: ['React', 'TypeScript', 'Javascript', 'HTML/CSS'],
         link: "https://github.com/abkoroma/my-portfolio.git"

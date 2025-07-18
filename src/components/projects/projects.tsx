@@ -16,7 +16,9 @@ export default function Projects() {
                             title={project.title}
                             description={project.description}
                             stack={project.stack}
-                            link={project.link}  />
+                            link={project.link} 
+                            view={project.view} 
+                        />
                     ))
                 }
             </div>

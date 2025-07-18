@@ -60,9 +60,15 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
 }
 
+.links-container {
+    display: flex; /* Use flexbox for horizontal alignment */
+    gap: 1rem; /* Add spacing between the spans */
+    margin-top: 2rem; /* Add spacing above the container */
+}
+
 .git-link {
     display: inline-block;
-    background-color: #f8f9fa; /* Light gray background color */
+    background-color: #343a40;; /* Light gray background color */
     padding: 0.5rem 1rem; /* Add padding inside the span */
     border: 1px solid #ddd; /* Light border around the span */
     border-radius: 5px; /* Rounded corners for a modern look */
@@ -70,9 +76,11 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     font-size: 0.9rem; /* Adjust font size */
     color: #343a40; /* Dark gray text color */
-    margin: 1.2rem 0.5rem 0 0; /* Add spacing around the span */
+    margin: 0.25rem 0.5rem 0 0; /* Add spacing around the span */
     transition: transform 0.2s ease, box-shadow 0.2s ease; 
-    width: 4.8rem;
+    cursor: pointer;
+    width: 75px;
+    /*width: 4.8rem;*/
 }
 
 .git-link:hover {
@@ -80,9 +88,10 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
 }
 
+
 .git-link .link {
     text-decoration: none; /* Remove underline from the link */
-    color: inherit; /* Inherit the text color from the parent */
+    color: white; /* Inherit the text color from the parent */
     font-weight: bold; /* Make the text bold */
 }
 

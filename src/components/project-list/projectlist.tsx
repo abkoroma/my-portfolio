@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './projectlist.css';
 
 export default function ProjectList(props: {
-    imageUrl: string, title: string, description: string, stack: string[], link: string}) {
+    imageUrl: string, title: string, description: string, stack: string[], link: string, view: string}) {
 
     return (
         <div className='grid-container'>
@@ -20,9 +20,14 @@ export default function ProjectList(props: {
                         )
                     }
                 </div>
-                <span className="git-link">
-                    <Link className='link' to={props.link} target="_blank" rel="noreferrer">Github</Link>
-                </span>
+                <div className="links-container">
+                    <span className="git-link">
+                        <Link className="link" to={props.link} target="_blank" rel="noreferrer">Github</Link>
+                    </span>
+                    <span className="git-link">
+                        <Link className="link" to={props.view} target="_blank" rel="noreferrer">View</Link>
+                    </span>
+                </div>
             </div>
         </div>
     );

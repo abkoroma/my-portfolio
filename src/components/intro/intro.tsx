@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import "./intro.css";
 import { GITHUB_LINK, LINKEDIN } from "../../techstack/links";
+import { Link } from "react-router-dom";
 
 export default function Intro() {
 
@@ -13,7 +14,7 @@ export default function Intro() {
                     Software Engineer in Frederick, MD building scalable applications with modern technologies.
                 </p>
                 <div className="span-container">
-                    <span><a href="/projects">View Project</a></span>
+                    <span><Link to="/projects">View Project</Link></span>
                     <span><a href={GITHUB_LINK} target="_blank">Github</a></span>
                     <span><a href={LINKEDIN} target="_blank">Linkedin</a></span>
                 </div>

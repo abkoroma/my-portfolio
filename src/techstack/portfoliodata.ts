@@ -11,6 +11,7 @@ export const data = [
         description: "Full stack hotel/cabin booking application.",
         stack: ['React', 'JavaScript', 'Typescript', 'HTML/CSS', 'Supabase','Tanstack'],
         link: "https://github.com/abkoroma/the-wild-oasis.git",
+        view: "https://the-wild-oasis-cabin-bookings.netlify.app/",
     },
     {
         id: 2,
@@ -19,6 +20,7 @@ export const data = [
         description: "Full stack ecomerce application.",
         stack: ['React', 'JavaScript', 'Typescript', 'HTML/CSS', 'GraphQL','Stripe'],
         link: "https://github.com/abkoroma/ecommerce-clothing-store",
+        view: "https://abk-crown-clothing.netlify.app/",
     },
     {
         id: 3,
@@ -26,7 +28,8 @@ export const data = [
         title: "Library Application",
         description: "Library book managment for both users and admins.",
         stack: ['React', 'Java', 'Spring', 'Typescript', 'SQL', 'Stripe', 'Okta'],
-        link: "https://github.com/abkoroma/library-app"
+        link: "https://github.com/abkoroma/library-app",
+        view: "",
     },
     {
         id: 4,
@@ -34,6 +37,7 @@ export const data = [
         title: "My Portfolio",
         description: "My personal portfolio website.",
         stack: ['React', 'TypeScript', 'Javascript', 'HTML/CSS'],
-        link: "https://github.com/abkoroma/my-portfolio.git"
+        link: "https://github.com/abkoroma/my-portfolio.git",
+        view: "https://abukoroma.dev/",
     },
 ];

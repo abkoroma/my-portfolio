@@ -44,3 +44,19 @@ This portfolio site highlights my skills, projects, and ways to connect.
 - **Routing:** React Router
 - **Testing:** Jest, React Testing Library
 
+## Project Showcase
+
+Featured projects include:
+
+- **The Wild Oasis:** Full stack hotel/cabin booking application.  
+  [Repo](https://github.com/abkoroma/the-wild-oasis.git) | [Live Demo](https://the-wild-oasis-cabin-bookings.netlify.app/)
+  - Stack: React, JavaScript, Typescript, HTML/CSS, Supabase, Tanstack
+
+- **Clothing Store:** Full stack ecommerce application.  
+  [Repo](https://github.com/abkoroma/ecommerce-clothing-store) | [Live Demo](https://abk-crown-clothing.netlify.app/)
+  - Stack: React, JavaScript, Typescript, HTML/CSS, GraphQL, Stripe
+
+- **My Portfolio:** This site!  
+  [Repo](https://github.com/abkoroma/my-portfolio.git) | [Live Demo](https://abukoroma.dev/)
+  - Stack: React, TypeScript, JavaScript, HTML/CSS
+

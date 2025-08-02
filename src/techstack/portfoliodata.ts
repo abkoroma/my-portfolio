@@ -1,5 +1,5 @@
 import ecommorce from "../logo/ecommerce.png";
-import libraryapp from "../logo/library-app.png";
+//import libraryapp from "../logo/library-app.png";
 import wildOasis from "../logo/the-wild-oasis.png";
 import portfolio from "../logo/portfolio-page.png";
 
@@ -22,7 +22,7 @@ export const data = [
         link: "https://github.com/abkoroma/ecommerce-clothing-store",
         view: "https://abk-crown-clothing.netlify.app/",
     },
-    {
+    /*{
         id: 3,
         imageUrl: `${libraryapp}`,
         title: "Library Application",
@@ -30,7 +30,7 @@ export const data = [
         stack: ['React', 'Java', 'Spring', 'Typescript', 'SQL', 'Stripe', 'Okta'],
         link: "https://github.com/abkoroma/library-app",
         view: "",
-    },
+    },*/
     {
         id: 4,
         imageUrl: `${portfolio}`,

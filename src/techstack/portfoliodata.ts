@@ -2,6 +2,7 @@ import ecommorce from "../logo/ecommerce.png";
 //import libraryapp from "../logo/library-app.png";
 import wildOasis from "../logo/the-wild-oasis.png";
 import portfolio from "../logo/portfolio-page.png";
+import staywise from "../logo/staywise.png";
 
 export const data = [
     {
@@ -15,6 +16,15 @@ export const data = [
     },
     {
         id: 2,
+        imageUrl: `${staywise}`,
+        title: "StayWise - Cabin Reservation Platform",
+        description: "A modern cabin reservation platform built for seamless booking experiences.",
+        stack: ['Next JS', 'Typescript', 'Supabase', 'Tailwind'],
+        link: "https://github.com/abkoroma/StayWise.git",
+        view: "https://stay-wise-snowy.vercel.app/",
+    },
+    {
+        id: 3,
         imageUrl: `${ecommorce}`,
         title: "Clothing Store",
         description: "Full stack ecomerce application.",
@@ -22,15 +32,6 @@ export const data = [
         link: "https://github.com/abkoroma/ecommerce-clothing-store",
         view: "https://abk-crown-clothing.netlify.app/",
     },
-    /*{
-        id: 3,
-        imageUrl: `${libraryapp}`,
-        title: "Library Application",
-        description: "Library book managment for both users and admins.",
-        stack: ['React', 'Java', 'Spring', 'Typescript', 'SQL', 'Stripe', 'Okta'],
-        link: "https://github.com/abkoroma/library-app",
-        view: "",
-    },*/
     {
         id: 4,
         imageUrl: `${portfolio}`,
